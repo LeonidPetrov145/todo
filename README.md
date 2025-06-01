@@ -19,4 +19,4 @@ docker-compose exec web python manage.py migrate
 
 docker-compose exec web python manage.py createsuperuser
 ```
-## Спомощью созданого SuperUser поменяйте роль одного из user на администратора для тестирования API
+## С помощью созданого SuperUser поменяйте роль одного из user на администратора для тестирования API
