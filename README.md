@@ -10,13 +10,10 @@
 ```bash
 https://github.com/LeonidPetrov145/todo.git
 cd todo
-docker-compose up --build
-
+docker-compose up --build -d
 ```
 # Создать новый терминал
 ```bash
-docker-compose exec web python manage.py migrate
-
-docker-compose exec web python manage.py createsuperuser
+docker-compose exec -it web python manage.py createsuperuser
 ```
 ## С помощью созданого SuperUser поменяйте роль одного из user на администратора для тестирования API
